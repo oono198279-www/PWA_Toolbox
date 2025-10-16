@@ -1,26 +1,58 @@
 [
   {
-    "id": "ct-timer",
+    "id": "CycleTimer",
     "name": "CT計測",
     "icon": "⏱️",
-    "tagline": "ストップウォッチ式でサイクル計測",
-    "description": "現場での作業サイクルタイムを素早く計測・記録するPWA。\nボタン大きめ／オフライン対応／JSONエクスポートに対応。",
-    "url": "https://on-site-tools.github.io/ct_timer/"
+    "tagline": "CT平均値や所要時間を算出",
+    "description": "現場での作業サイクルタイムを素早く計測するPWA\nCT平均値や目標数までの所要時間をリアルタイム算出",
+    "url": "https://oono198279-www.github.io/CycleTimer/?source=pwa"
   },
   {
-    "id": "steel-stock",
-    "name": "鋼材在庫計算",
+    "id": "ProductionForecast",
+    "name": "生産予定PWA",
     "icon": "🧮",
-    "tagline": "鋼材在庫・切断本数を即見積",
-    "description": "サイズ・歩留まりから必要本数と残材を計算。iPhone片手で操作しやすいテンキーUI。",
-    "url": "https://on-site-tools.github.io/steel_stock_calc/"
+    "tagline": "日産予定数を算出",
+    "description": "月産数、稼動日、設備台数、追加発注などから\n日産予定数とその累積を算出",
+    "url": "https://oono198279-www.github.io/Production-Forecast/index.html"
   },
   {
-    "id": "forecast",
-    "name": "生産予測",
+    "id": "ControlChart",
+    "name": "管理図用テーブル",
     "icon": "📊",
-    "tagline": "需要・在庫から先読み",
-    "description": "需要/在庫/リードタイムを入れるだけで未来在庫を可視化。CSV入出力・スマホ最適UI。",
-    "url": "https://on-site-tools.github.io/production-forecast/"
+    "tagline": "サンプルデータからx̄とRを算出",
+    "description": "中央値、最大値と最小値の差を算出",
+    "url": "https://oono198279-www.github.io/Control_chart/"
+  }
+  {
+    "id": "CoreSim",
+    "name": "コア生産シミュレータ",
+    "icon": "🧮",
+    "tagline": "コア生産計画用シミュレータ",
+    "description": "月産数、稼動日、他製品生産などから\n日産予定数とその累積を算出",
+    "url": "https://oono198279-www.github.io/core-sim/"
+  }
+  {
+    "id": "SteelStockCalc",
+    "name": "鋼材計算",
+    "icon": "🧮",
+    "tagline": "鋼材の重量や本数から加工可能個数を算出",
+    "description": "鋼材の本数や鋼材束の重量から加工可能な個数を算出\n複数の製品もアプリ内で拡張で対応",
+    "url": "https://oono198279-www.github.io/steel_stock_calc/?source=pwa"
+  }
+  {
+    "id": "CNC_Calc",
+    "name": "CNC座標計算",
+    "icon": "🧮",
+    "tagline": "CNC用 計算ツール",
+    "description": "主軸回転数、指定面粗度からの送り速度、\nフライス長さ、角部R切削時の座標を算出",
+    "url": "https://oono198279-www.github.io/CNC_Calc/"
+  }
+  {
+    "id": "StopWatch",
+    "name": "ストップウォッチ",
+    "icon": "⏱️",
+    "tagline": "指定した秒数毎にカウント",
+    "description": "カウント毎にビープ音で通知する事でCT意識をつける",
+    "url": "https://miyoko-web.github.io/stopwatch-pwa/"
   }
 ]
