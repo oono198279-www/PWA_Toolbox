@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ct-timer",
+    "name": "CT計測",
+    "icon": "⏱️",
+    "tagline": "ストップウォッチ式でサイクル計測",
+    "description": "現場での作業サイクルタイムを素早く計測・記録するPWA。\nボタン大きめ／オフライン対応／JSONエクスポートに対応。",
+    "url": "https://on-site-tools.github.io/ct_timer/"
+  },
+  {
+    "id": "steel-stock",
+    "name": "鋼材在庫計算",
+    "icon": "🧮",
+    "tagline": "鋼材在庫・切断本数を即見積",
+    "description": "サイズ・歩留まりから必要本数と残材を計算。iPhone片手で操作しやすいテンキーUI。",
+    "url": "https://on-site-tools.github.io/steel_stock_calc/"
+  },
+  {
+    "id": "forecast",
+    "name": "生産予測",
+    "icon": "📊",
+    "tagline": "需要・在庫から先読み",
+    "description": "需要/在庫/リードタイムを入れるだけで未来在庫を可視化。CSV入出力・スマホ最適UI。",
+    "url": "https://on-site-tools.github.io/production-forecast/"
+  }
+]
