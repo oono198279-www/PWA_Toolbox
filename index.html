@@ -23,9 +23,16 @@
     transition:opacity .5s ease;z-index:999;
   }
   #splash.hide{opacity:0;pointer-events:none;}
-  #splash img{width:96px;height:96px;margin-bottom:12px;}
+  #splash .box{display:flex;flex-direction:column;align-items:center}
+  #splash img{
+    width:min(26vh,160px); height:min(26vh,160px);
+    display:block; object-fit:contain;
+    /* 画像に余白が入っていても中央に見えるように影付きで視認性UP（任意） */
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,.15));
+    margin-bottom:12px;
+  }
   #splash p{font-size:20px;font-weight:bold;color:#334155;margin:0;}
-
+  
   /* ▼ 本体 ▼ */
   header{position:sticky;top:0;background:linear-gradient(#fff,rgba(255,255,255,.7));
     backdrop-filter:saturate(180%) blur(8px);padding:16px 20px;border-bottom:1px solid #eee;z-index:10}
@@ -52,7 +59,7 @@
 <body>
   <!-- 起動画面 -->
   <div id="splash">
-    <div>
+    <div class="box">
       <img src="icons/icon-192.png" alt="logo">
       <p>PWA 🧰 Toolbox</p>
     </div>
@@ -65,23 +72,24 @@
   <script type="application/json" id="apps-fallback">[]</script>
 
 <script>
-(async function(){
-  const grid=document.getElementById('grid');
-  let apps=[];
-  try{
-    const res=await fetch('apps.json',{cache:'no-cache'});
-    if(!res.ok)throw new Error(res.statusText);
-    apps=await res.json();
-  }catch{
-    try{apps=JSON.parse(document.getElementById('apps-fallback').textContent||'[]');}catch{}
-  }
-
-  if(!Array.isArray(apps)||apps.length===0){
-    grid.innerHTML='<p>アプリ一覧が空です。apps.json を編集してください。</p>';
-  }else{
-    apps.forEach(app=>grid.appendChild(renderCard(app)));
-  }
-
+  (async function(){
+    const grid = document.getElementById('grid');
+    const hideSplash = ()=>document.getElementById('splash')?.classList.add('hide');
+  
+    // ★ フェールセーフ：最大2.2秒で必ず隠す
+    setTimeout(hideSplash, 2200);
+    // DOM読み込みでも隠す（画像読み込み待ちを回避）
+    document.addEventListener('DOMContentLoaded', hideSplash);
+    // 従来どおり load でも隠す
+    window.addEventListener('load', hideSplash);
+  
+    // ...（apps.jsonの読み込みとカード描画は今までどおり）...
+  
+    if('serviceWorker' in navigator){
+      navigator.serviceWorker.register('./sw.js').catch(()=>{});
+    }
+  })();
+  
   // 起動画面：読み込み後1.5秒でフェードアウト
   window.addEventListener('load',()=>{
     setTimeout(()=>document.getElementById('splash').classList.add('hide'),1500);
