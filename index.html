@@ -75,12 +75,21 @@
 (async function () {
   const grid = document.getElementById('grid');
   const splash = document.getElementById('splash');
-  const hideSplash = () => splash?.classList.add('hide');
 
-  // スプラッシュを確実に消す（3系統＋フェールセーフ）
+  // ← これを強化版に
+  const hideSplash = () => {
+    if (!splash) return;
+    splash.classList.add('hide');        // フェード
+    // フェード待っても待たなくても、最終的に消す（確実化）
+    setTimeout(() => { splash.style.display = 'none'; }, 600);
+    // 念のため即時でも消す（タイマーが凍っても見えないように）
+    requestAnimationFrame(() => { splash.style.display = 'none'; });
+  };
+
+  // 3系統＋フェールセーフ
   setTimeout(hideSplash, 2200);
-  document.addEventListener('DOMContentLoaded', hideSplash);
-  window.addEventListener('load', hideSplash);
+  document.addEventListener('DOMContentLoaded', hideSplash, { once: true });
+  window.addEventListener('load', hideSplash, { once: true });
 
   // apps.json を取得 → カード描画
   let apps = [];
