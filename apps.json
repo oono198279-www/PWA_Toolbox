@@ -22,7 +22,7 @@
     "tagline": "サンプルデータからx̄とRを算出",
     "description": "中央値、最大値と最小値の差を算出",
     "url": "https://oono198279-www.github.io/Control_chart/"
-  }
+  },
   {
     "id": "CoreSim",
     "name": "コア生産シミュレータ",
@@ -30,7 +30,7 @@
     "tagline": "コア生産計画用シミュレータ",
     "description": "月産数、稼動日、他製品生産などから\n日産予定数とその累積を算出",
     "url": "https://oono198279-www.github.io/core-sim/"
-  }
+  },
   {
     "id": "SteelStockCalc",
     "name": "鋼材計算",
@@ -38,7 +38,7 @@
     "tagline": "鋼材の重量や本数から加工可能個数を算出",
     "description": "鋼材の本数や鋼材束の重量から加工可能な個数を算出\n複数の製品もアプリ内で拡張で対応",
     "url": "https://oono198279-www.github.io/steel_stock_calc/?source=pwa"
-  }
+  },
   {
     "id": "CNC_Calc",
     "name": "CNC座標計算",
@@ -46,7 +46,7 @@
     "tagline": "CNC用 計算ツール",
     "description": "主軸回転数、指定面粗度からの送り速度、\nフライス長さ、角部R切削時の座標を算出",
     "url": "https://oono198279-www.github.io/CNC_Calc/"
-  }
+  },
   {
     "id": "StopWatch",
     "name": "ストップウォッチ",
@@ -54,5 +54,5 @@
     "tagline": "指定した秒数毎にカウント",
     "description": "カウント毎にビープ音で通知する事でCT意識をつける",
     "url": "https://miyoko-web.github.io/stopwatch-pwa/"
-  }
+  },
 ]
