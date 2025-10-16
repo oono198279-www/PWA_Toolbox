@@ -2,7 +2,7 @@
   {
     "id": "CycleTimer",
     "name": "CT計測",
-    "icon": "⏱️",
+    "icon": "https://oono198279-www.github.io/CycleTimer/icons/icon-192.png",
     "tagline": "CT平均値や所要時間を算出",
     "description": "現場での作業サイクルタイムを素早く計測するPWA\nCT平均値や目標数までの所要時間をリアルタイム算出",
     "url": "https://oono198279-www.github.io/CycleTimer/?source=pwa"
@@ -10,15 +10,15 @@
   {
     "id": "ProductionForecast",
     "name": "生産予定PWA",
-    "icon": "🧮",
+    "icon": "https://oono198279-www.github.io/Production-Forecast/icon-192.png",
     "tagline": "日産予定数を算出",
     "description": "月産数、稼動日、設備台数、追加発注などから\n日産予定数とその累積を算出",
-    "url": "https://oono198279-www.github.io/Production-Forecast/index.html"
+    "url": "https://oono198279-www.github.io/Production-Forecast/"
   },
   {
     "id": "ControlChart",
     "name": "管理図用テーブル",
-    "icon": "📊",
+    "icon": "https://oono198279-www.github.io/Control_chart/icons/icon-192.png",
     "tagline": "サンプルデータからx̄とRを算出",
     "description": "中央値、最大値と最小値の差を算出",
     "url": "https://oono198279-www.github.io/Control_chart/"
@@ -26,7 +26,7 @@
   {
     "id": "CoreSim",
     "name": "コア生産シミュレータ",
-    "icon": "🧮",
+    "icon": "https://oono198279-www.github.io/core-sim/icon-192.png",
     "tagline": "コア生産計画用シミュレータ",
     "description": "月産数、稼動日、他製品生産などから\n日産予定数とその累積を算出",
     "url": "https://oono198279-www.github.io/core-sim/"
@@ -34,7 +34,7 @@
   {
     "id": "SteelStockCalc",
     "name": "鋼材計算",
-    "icon": "🧮",
+    "icon": "https://oono198279-www.github.io/steel_stock_calc/icons/icon-192.png",
     "tagline": "鋼材の重量や本数から加工可能個数を算出",
     "description": "鋼材の本数や鋼材束の重量から加工可能な個数を算出\n複数の製品もアプリ内で拡張で対応",
     "url": "https://oono198279-www.github.io/steel_stock_calc/?source=pwa"
@@ -42,7 +42,7 @@
   {
     "id": "CNC_Calc",
     "name": "CNC座標計算",
-    "icon": "🧮",
+    "icon": "https://oono198279-www.github.io/CNC_Calc/icons/icon-192.png",
     "tagline": "CNC用 計算ツール",
     "description": "主軸回転数、指定面粗度からの送り速度、\nフライス長さ、角部R切削時の座標を算出",
     "url": "https://oono198279-www.github.io/CNC_Calc/"
@@ -50,7 +50,7 @@
   {
     "id": "StopWatch",
     "name": "ストップウォッチ",
-    "icon": "⏱️",
+    "icon": "https://miyoko-web.github.io/stopwatch-pwa/icons/icon-192.png",
     "tagline": "指定した秒数毎にカウント",
     "description": "カウント毎にビープ音で通知する事でCT意識をつける",
     "url": "https://miyoko-web.github.io/stopwatch-pwa/"
