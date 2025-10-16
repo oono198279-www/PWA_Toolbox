@@ -72,57 +72,86 @@
   <script type="application/json" id="apps-fallback">[]</script>
 
 <script>
-  (async function(){
-    const grid = document.getElementById('grid');
-    const hideSplash = ()=>document.getElementById('splash')?.classList.add('hide');
-  
-    // ★ フェールセーフ：最大2.2秒で必ず隠す
-    setTimeout(hideSplash, 2200);
-    // DOM読み込みでも隠す（画像読み込み待ちを回避）
-    document.addEventListener('DOMContentLoaded', hideSplash);
-    // 従来どおり load でも隠す
-    window.addEventListener('load', hideSplash);
-  
-    // ...（apps.jsonの読み込みとカード描画は今までどおり）...
-  
-    if('serviceWorker' in navigator){
-      navigator.serviceWorker.register('./sw.js').catch(()=>{});
-    }
-  })();
-  
-  // 起動画面：読み込み後1.5秒でフェードアウト
-  window.addEventListener('load',()=>{
-    setTimeout(()=>document.getElementById('splash').classList.add('hide'),1500);
-  });
+(async function () {
+  const grid = document.getElementById('grid');
+  const splash = document.getElementById('splash');
+  const hideSplash = () => splash?.classList.add('hide');
 
-  function renderCard(app){
-    const card=document.createElement('article');card.className='card';
-    const head=document.createElement('button');head.className='head';
-    head.innerHTML=`
+  // スプラッシュを確実に消す（3系統＋フェールセーフ）
+  setTimeout(hideSplash, 2200);
+  document.addEventListener('DOMContentLoaded', hideSplash);
+  window.addEventListener('load', hideSplash);
+
+  // apps.json を取得 → カード描画
+  let apps = [];
+  try {
+    const res = await fetch('apps.json', { cache: 'no-cache' });
+    if (!res.ok) throw new Error(res.statusText);
+    apps = await res.json();
+  } catch {
+    try {
+      apps = JSON.parse(document.getElementById('apps-fallback').textContent || '[]');
+    } catch {}
+  }
+
+  if (!Array.isArray(apps) || apps.length === 0) {
+    grid.innerHTML = '<p>アプリ一覧が空です。apps.json を編集してください。</p>';
+  } else {
+    apps.forEach(app => grid.appendChild(renderCard(app)));
+  }
+
+  // Service Worker
+  if ('serviceWorker' in navigator) {
+    try { await navigator.serviceWorker.register('./sw.js'); } catch {}
+  }
+
+  // ------- 以下はUIユーティリティ -------
+  function renderCard(app) {
+    const card = document.createElement('article');
+    card.className = 'card';
+
+    const head = document.createElement('button');
+    head.className = 'head';
+    head.innerHTML = `
       <div class="icon">${iconHTML(app.icon)}</div>
-      <div><div class="title">${esc(app.name)}</div><div class="tagline">${esc(app.tagline||'')}</div></div>`;
-    const body=document.createElement('div');body.className='body';
-    body.innerHTML=`
-      <div class="desc">${esc(app.description||'')}</div>
+      <div>
+        <div class="title">${esc(app.name)}</div>
+        <div class="tagline">${esc(app.tagline || '')}</div>
+      </div>`;
+
+    const body = document.createElement('div');
+    body.className = 'body';
+    body.innerHTML = `
+      <div class="desc">${esc(app.description || '')}</div>
       <div class="actions">
         <a class="btn primary" href="${app.url}" target="_blank" rel="noopener">開く</a>
         <button class="btn ghost" type="button">リンク</button>
       </div>`;
-    head.onclick=()=>card.classList.toggle('open');
-    body.querySelector('.btn.ghost').onclick=async()=>{
-      try{await navigator.clipboard.writeText(app.url);alert('URLをコピーしました');}
-      catch{prompt('コピーできない環境です。手動でコピーしてください：',app.url);}
+
+    head.onclick = () => card.classList.toggle('open');
+    body.querySelector('.btn.ghost').onclick = async () => {
+      try { await navigator.clipboard.writeText(app.url); alert('URLをコピーしました'); }
+      catch { prompt('コピーできない環境です。手動でコピーしてください：', app.url); }
     };
-    card.append(head,body);
+
+    card.append(head, body);
     return card;
   }
-  function iconHTML(src){return(/^https?:|^\.{0,2}\//.test(src))?`<img alt="" src="${esc(src)}">`:esc(src||'🧩');}
-  function esc(s){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));}
 
-  if('serviceWorker' in navigator){
-    navigator.serviceWorker.register('./sw.js').catch(()=>{});
+  function iconHTML(src) {
+    return (/^https?:|^\.{0,2}\//.test(src))
+      ? `<img alt="" src="${esc(src)}">`
+      : esc(src || '🧩');
+  }
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, m => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'
+    }[m]));
   }
 })();
 </script>
+
+
 </body>
 </html>
