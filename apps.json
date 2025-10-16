@@ -54,5 +54,5 @@
     "tagline": "指定した秒数毎にカウント",
     "description": "カウント毎にビープ音で通知する事でCT意識をつける",
     "url": "https://miyoko-web.github.io/stopwatch-pwa/"
-  },
+  }
 ]
