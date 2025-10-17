@@ -40,19 +40,19 @@
     "url": "https://oono198279-www.github.io/steel_stock_calc/?source=pwa"
   },
   {
-    "id": "CNC_Calc",
-    "name": "CNC座標計算",
-    "icon": "https://oono198279-www.github.io/CNC_Calc/icons/icon-192.png",
-    "tagline": "CNC用 計算ツール",
-    "description": "主軸回転数、指定面粗度からの送り速度、\nフライス長さ、角部R切削時の座標を算出",
-    "url": "https://oono198279-www.github.io/CNC_Calc/"
-  },
-  {
     "id": "StopWatch",
     "name": "ストップウォッチ",
     "icon": "https://miyoko-web.github.io/stopwatch-pwa/icons/icon-192.png",
     "tagline": "指定した秒数毎にカウント",
     "description": "カウント毎にビープ音で通知する事でCT意識をつける",
     "url": "https://miyoko-web.github.io/stopwatch-pwa/"
+  },
+  {
+    "id": "PWA_Toolbox",
+    "name": " PWA🧰Toolbox",
+    "icon": "https://oono198279-www.github.io/PWA_Toolbox/icons/icon-192.png",
+    "tagline": "ランチャアプリ",
+    "description": "各アプリを格納",
+    "url": "https://oono198279-www.github.io/PWA_Toolbox/"
   }
 ]
