@@ -5,7 +5,7 @@
     "icon": "https://oono198279-www.github.io/CycleTimer/icons/icon-192.png",
     "tagline": "CT平均値や所要時間を算出",
     "description": "現場での作業サイクルタイムを素早く計測するPWA\nCT平均値や目標数までの所要時間をリアルタイム算出",
-    "url": "https://oono198279-www.github.io/CycleTimer/?source=pwa"
+    "url": "https://oono198279-www.github.io/CycleTimer/"
   },
   {
     "id": "ProductionForecast",
@@ -37,7 +37,7 @@
     "icon": "https://oono198279-www.github.io/steel_stock_calc/icons/icon-192.png",
     "tagline": "鋼材の重量や本数から加工可能個数を算出",
     "description": "鋼材の本数や鋼材束の重量から加工可能な個数を算出\n複数の製品もアプリ内で拡張で対応",
-    "url": "https://oono198279-www.github.io/steel_stock_calc/?source=pwa"
+    "url": "https://oono198279-www.github.io/steel_stock_calc/"
   },
   {
     "id": "StopWatch",
