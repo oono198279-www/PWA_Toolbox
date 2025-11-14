@@ -41,10 +41,10 @@
   },
   {
     "id": "StopWatch",
-    "name": "ストップウォッチ",
+    "name": "バイト取付",
     "icon": "https://oono198279-www.github.io/lathe_tool_setup/icon-192.png",
-    "tagline": "指定した秒数毎にカウント",
-    "description": "カウント毎にビープ音で通知する事でCT意識をつける",
+    "tagline": "手研ぎバイト取付用",
+    "description": "バイトの形状から取付位置を算出",
     "url": "https://oono198279-www.github.io/lathe_tool_setup/"
   },
   {
