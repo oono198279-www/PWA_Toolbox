@@ -42,6 +42,14 @@
   {
     "id": "StopWatch",
     "name": "ストップウォッチ",
+    "icon": "https://oono198279-www.github.io/lathe_tool_setup/icon-192.png",
+    "tagline": "指定した秒数毎にカウント",
+    "description": "カウント毎にビープ音で通知する事でCT意識をつける",
+    "url": "https://oono198279-www.github.io/lathe_tool_setup/"
+  },
+  {
+    "id": "StopWatch",
+    "name": "ストップウォッチ",
     "icon": "https://miyoko-web.github.io/stopwatch-pwa/icons/icon-192.png",
     "tagline": "指定した秒数毎にカウント",
     "description": "カウント毎にビープ音で通知する事でCT意識をつける",
