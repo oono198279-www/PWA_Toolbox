@@ -1,5 +1,13 @@
 [
   {
+    "id": "Pareto_PWA",
+    "name": "パレート図作成ツール",
+    "icon": "https://oono198279-www.github.io/Pareto_PWA/icon-192.png",
+    "tagline": "パレート図のPNGを生成",
+    "description": "Excelの縦並びテーブルをコピペする事によりパレート図を生成\n項目名と値を手入力でも可能",
+    "url": "https://oono198279-www.github.io/Pareto_PWA/"
+  },
+  {
     "id": "CycleTimer",
     "name": "CT計測",
     "icon": "https://oono198279-www.github.io/CycleTimer/icons/icon-192.png",
