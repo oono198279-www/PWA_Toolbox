@@ -1,5 +1,13 @@
 [
   {
+    "id": "Work_pace_PWA",
+    "name": "作業ペース計測ツール",
+    "icon": "https://oono198279-www.github.io/work-pace-pwa/",
+    "tagline": "ノルマ完了時間を算出",
+    "description": "1ロットの作業時間から、ノルマ完了時間を算出",
+    "url": "https://oono198279-www.github.io/work-pace-pwa/icons/icon-192.png"
+  },
+  {
     "id": "Pareto_PWA",
     "name": "パレート図作成ツール",
     "icon": "https://oono198279-www.github.io/Pareto_PWA/icon-192.png",
