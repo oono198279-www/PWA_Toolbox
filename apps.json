@@ -35,7 +35,7 @@
     "id": "ControlChart",
     "name": "管理図用テーブル",
     "icon": "https://oono198279-www.github.io/Control_chart/icons/icon-192.png",
-    "tagline": "サンプルデータからx̄とRを算出",
+    "tagline": "サンプルデータからx̃とRを算出",
     "description": "中央値、最大値と最小値の差を算出",
     "url": "https://oono198279-www.github.io/Control_chart/"
   },
