@@ -39,6 +39,14 @@
     "description": "中央値、最大値と最小値の差を算出",
     "url": "https://oono198279-www.github.io/Control_chart/"
   },
+    {
+    "id": "ControlChart",
+    "name": "管理図用テーブル②",
+    "icon": "https://oono198279-www.github.io/Control_chart2/icon-192.png",
+    "tagline": "サンプルデータからRとx̃またはx̄を算出",
+    "description": "最大値と最小値の差と中央値または平均値を算出\n4列×4チャンネルで16項目に対応",
+    "url": "https://oono198279-www.github.io/Control_chart2/"
+  },
   {
     "id": "CoreSim",
     "name": "コア生産シミュレータ",
