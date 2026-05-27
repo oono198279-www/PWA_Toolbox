@@ -1,5 +1,13 @@
 [
   {
+    "id": "production-finish-predictor",
+    "name": "生産完了予測",
+    "icon": "https://oono198279-www.github.io/production-finish-predictor/icons/icon-192.png",
+    "tagline": "日産数と出来高から終了時刻を算出",
+    "description": "日産数・現在の出来高・現在時刻から、残り個数、所要時間、終了予定時刻を計算します。自働盤の連続加工向けに、翌日表記や製品別CT・可動率設定にも対応。",
+    "url": "https://oono198279-www.github.io/production-finish-predictor/",
+  }
+  {
     "id": "Work_pace_PWA",
     "name": "作業ペース計測ツール",
     "icon": "https://oono198279-www.github.io/work-pace-pwa/icons/icon-192.png",
