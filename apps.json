@@ -8,6 +8,14 @@
     "url": "https://oono198279-www.github.io/production_finish_predictor/"
   },
   {
+    "id": "ResizeImagesForIcons",
+    "name": "アイコンリサイズツール",
+    "icon": "https://oono198279-www.github.io/Resize-images-for-icons/icon-192.png",
+    "tagline": "PWA用アイコンを一括生成",
+    "description": "画像を中央で正方形に切り抜き、180・192・512pxのPNGへ一括変換\nZIPまたは個別PNGで保存",
+    "url": "https://oono198279-www.github.io/Resize-images-for-icons/"
+  },
+  {
     "id": "Work_pace_PWA",
     "name": "作業ペース計測ツール",
     "icon": "https://oono198279-www.github.io/work-pace-pwa/icons/icon-192.png",
