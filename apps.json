@@ -16,6 +16,22 @@
     "url": "https://oono198279-www.github.io/Resize-images-for-icons/"
   },
   {
+    "id": "120DEG",
+    "name": "120°面補正ツール",
+    "icon": "https://oono198279-www.github.io/120DEG/icons/icon-192.png",
+    "tagline": "120°面の補正値を算出",
+    "description": "現在値と目標値から、120°面の追加Z送り量や角度調整に必要なX補正量を算出",
+    "url": "https://oono198279-www.github.io/120DEG/"
+  },
+  {
+    "id": "MeasurementEntryTable",
+    "name": "測定値記入表",
+    "icon": "https://oono198279-www.github.io/Measurement_entry_table/icons/icon-192.png",
+    "tagline": "測定値を入力して管理値を判定",
+    "description": "測定値を入力するとOK・警告・NGを表示\n製品・測定箇所・規格値・記録枠・略図を設定可能",
+    "url": "https://oono198279-www.github.io/Measurement_entry_table/"
+  },
+  {
     "id": "Work_pace_PWA",
     "name": "作業ペース計測ツール",
     "icon": "https://oono198279-www.github.io/work-pace-pwa/icons/icon-192.png",
