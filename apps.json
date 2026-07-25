@@ -16,6 +16,14 @@
     "url": "https://oono198279-www.github.io/Resize-images-for-icons/"
   },
   {
+  "id": "pdf-merge-editor",
+  "name": "PDF結合・編集するやーᐕ)つ",
+  "icon": "https://oono198279-www.github.io/PDF-Merge-Editor/icon-192.png",
+  "tagline": "オフラインでPDFを結合・並べ替え・回転・削除",
+  "description": "複数のPDFを結合し、ページの並べ替え・回転・削除・複製をブラウザ内だけで行えます。PDFは外部へ送信されず、ローカルで処理されます。",
+  "url": "https://oono198279-www.github.io/PDF-Merge-Editor/"
+  },
+  {
     "id": "120DEG",
     "name": "120°面補正ツール",
     "icon": "https://oono198279-www.github.io/120DEG/icons/icon-192.png",
