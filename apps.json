@@ -120,6 +120,14 @@
     "url": "https://miyoko-web.github.io/stopwatch-pwa/"
   },
   {
+    "id": "TapCount",
+    "name": "TapCount",
+    "icon": "https://oono198279-www.github.io/TapCount/icons/icon-192.png",
+    "tagline": "写真をタップして対象物をカウント",
+    "description": "写真上の対象物をタップしてマーキングし、スタンプ数をカウント。Undo・Redo、画像移動・ピンチズーム、スタンプ種類・サイズ・色変更、PNG保存、作業状態の自動保存・復元に対応。画像データは端末内だけで処理されます。",
+    "url": "https://oono198279-www.github.io/TapCount/"
+  },
+  {
     "id": "PWA_Toolbox",
     "name": " PWA🧰Toolbox",
     "icon": "https://oono198279-www.github.io/PWA_Toolbox/icons/icon-192.png",
