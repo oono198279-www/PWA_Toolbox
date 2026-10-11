@@ -128,19 +128,20 @@
     "url": "https://oono198279-www.github.io/TapCount/"
   },
   {
-    "id": "PWA_Toolbox",
-    "name": " PWA🧰Toolbox",
-    "icon": "https://oono198279-www.github.io/PWA_Toolbox/icons/icon-192.png",
-    "tagline": "ランチャアプリ",
-    "description": "各アプリを格納",
-    "url": "https://oono198279-www.github.io/PWA_Toolbox/"
-  },
-  {
     "id": "CNC-Dual-Viewer",
     "name": "CNC Dual Viewer",
     "icon": "https://oono198279-www.github.io/CNC-Dual-Viewer/icons/icon-192.png",
     "tagline": "MAIN/BACKを待合わせコードで自動整列",
     "description": "CNCメイン・バックのプログラムを左右比較し、待合わせコードを自動整列する閲覧専用ビューア",
     "url": "https://oono198279-www.github.io/CNC-Dual-Viewer/"
+  },
+  {
+    "id": "PWA_Toolbox",
+    "name": " PWA🧰Toolbox",
+    "icon": "https://oono198279-www.github.io/PWA_Toolbox/icons/icon-192.png",
+    "tagline": "ランチャアプリ",
+    "description": "各アプリを格納",
+    "url": "https://oono198279-www.github.io/PWA_Toolbox/"
   }
+
 ]
