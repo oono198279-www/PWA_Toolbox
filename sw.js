@@ -1,4 +1,4 @@
-const VERSION = 'v1.0.23';
+const VERSION = 'v1.0.24';
 const CORE = [
   './',
   './index.html',
